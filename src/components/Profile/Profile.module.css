@@ -4,11 +4,74 @@
   justify-content: center;
   align-items: center;
   align-content: space-between;
+  background-color: #ffffff;
+  border: 3px solid black;
+  border-radius: 12px;
+  color: black;
+  width: 778px;
+  height: 808px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.profileCard ul {
+.profileDetails {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12px;
+  font-family: serif, Georgia, "Times New Roman", Times;
+  font-size: 48px;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 224px;
+  height: 224px;
+  background-color: #2a2a2a;
+}
+
+.profileName {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profileTag {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.profileLocation {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.profileStats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.profileActivity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.profileLabel .profileQuantity {
+  font-style: sans-serif;
+  font-weight: bold;
+}
+
+.profileQuantity {
+  font-weight: 900;
 }

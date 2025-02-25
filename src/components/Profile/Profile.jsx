@@ -1,44 +1,27 @@
-import Activity from '../Activity/Activity';
-import UserDetails from '../UserDetails/UserDetails';
-import css from '../Profile/Profile.module.css';
+import css from "../Profile/Profile.module.css";
 
 function Profile({ name, tag, location, image, stats }) {
   console.log(css);
   return (
     <div className={css.profileCard}>
-      <UserDetails
-        name={name}
-        tag={tag}
-        location={location}
-        image={image}
-      ></UserDetails>
-      {/* <div className={css.details}>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
-      </div> */}
-      <ul>
-        <li>
-          <Activity label="Followers" quantity={stats.followers}></Activity>
-          {/* <div className={css.activity}>
-            <span className={css.label}>Followers</span>
-            <span className={css.quantity}>{stats.followers}</span>
-          </div> */}
+      <div className={css.profileDetails}>
+        <img className={css.profileImage} src={image} alt="User avatar" />
+        <p className={css.profileName}>{name}</p>
+        <p className={css.profileTag}>@{tag}</p>
+        <p className={css.profileLocation}>{location}</p>
+      </div>
+      <ul className={css.profileStats}>
+        <li className={css.profileActivity}>
+          <span className={css.profileLabel}>Followers</span>
+          <span className={css.profileQuantity}>{stats.followers}</span>
         </li>
-        <li>
-          <Activity label="Views" quantity={stats.views}></Activity>
-          {/* <div className={css.activity}>
-            <span className={css.label}>Views</span>
-            <span className={css.quantity}>{stats.views}</span>
-          </div> */}
+        <li className={css.profileActivity}>
+          <span className={css.profileLabel}>Views</span>
+          <span className={css.profileQuantity}>{stats.views}</span>
         </li>
-        <li>
-          <Activity label="Likes" quantity={stats.likes}></Activity>
-          {/* <div className={css.activity}>
-            <span className={css.label}>Likes</span>
-            <span className={css.quantity}>{stats.likes}</span>
-          </div> */}
+        <li className={css.profileActivity}>
+          <span className={css.profileLabel}>Likes</span>
+          <span className={css.profileQuantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
