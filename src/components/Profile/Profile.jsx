@@ -1,6 +1,6 @@
-import css from "../Profile/Profile.module.css";
+import css from '../Profile/Profile.module.css';
 
-function Profile({ name, tag, location, image, stats }) {
+const Profile = ({ name, tag, location, image, stats }) => {
   console.log(css);
   return (
     <div className={css.profileCard}>
@@ -26,6 +26,6 @@ function Profile({ name, tag, location, image, stats }) {
       </ul>
     </div>
   );
-}
+};
 
 export default Profile;

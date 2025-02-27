@@ -1,15 +1,15 @@
 .profileCard {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  align-content: space-between;
   background-color: #ffffff;
   border: 3px solid black;
   border-radius: 12px;
   color: black;
-  width: 778px;
-  height: 808px;
+  width: 720px;
+  height: 744px;
   margin: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -19,59 +19,72 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  font-family: serif, Georgia, "Times New Roman", Times;
+  font-family: sans-serif;
   font-size: 48px;
 }
 
 .profileImage {
   border-radius: 50%;
-  width: 224px;
-  height: 224px;
+  width: 248px;
+  height: 248px;
   background-color: #2a2a2a;
 }
 
 .profileName {
   font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-weight: 700;
+  margin-top: 44px;
 }
 
 .profileTag {
-  font-size: 1.2em;
-  color: #777;
-  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #929292;
+  margin-top: 44px;
 }
 
 .profileLocation {
-  font-size: 1em;
-  color: #555;
-  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #929292;
+  margin-top: 32px;
 }
 
 .profileStats {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: 100%;
-  margin-bottom: 20px;
+  font-family: sans-serif;
   font-size: 40px;
 }
 
+.profileStats li:last-child {
+  border-right: none;
+  border-bottom-right-radius: 10px;
+}
+
+.profileStats li:first-child {
+  border-bottom-left-radius: 10px;
+}
+
 .profileActivity {
+  flex: 1;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+  border: 3px solid #888888;
+  border-left: none;
+  border-bottom: none;
+  width: calc(100% / 3);
+  background-color: rgb(200, 200, 200);
 }
 
-.profileLabel .profileQuantity {
-  font-style: sans-serif;
-  font-weight: bold;
+.profileLabel {
+  font-weight: 500;
 }
 
 .profileQuantity {
-  font-weight: 900;
+  font-size: 36px;
+  font-weight: 700;
 }
